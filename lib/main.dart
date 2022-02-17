@@ -115,7 +115,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
 
   void changeDieFace() {
     return setState(() {
-      animationController.fling(from: 0);
+      animationController.forward(from: 0);
       NumberFaceAssetString = 'assets/images/${Random().nextInt(10) + 1}.png';
     });
   }
